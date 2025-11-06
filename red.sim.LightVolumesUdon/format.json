@@ -1,5 +1,5 @@
 {
-  "_id": 261,
+  "_id": -1,
   "name": "RED_SIM's LightVolumes",
   "modversion": "1.0.1",
   "gameversion": "2025r180",
@@ -20,7 +20,7 @@
     ""
   ],
   "downloadlink": "",
-  "sourcelink": "https://github.com/TikkaQrow/TikkaCVRMods/tree/master/red.sim.LightVolumesUdon",
+  "sourcelink": "https://github.com/TikkaQrow/TikkaCVRMods/tree/master/RedSimsLightVolumes",
   "changelog": "Now being maintained by TikkaQrow",
-  "embedcolor": "#eb4034"
+  "embedcolor": "#ff6fff"
 }

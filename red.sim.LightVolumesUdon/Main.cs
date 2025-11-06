@@ -5,7 +5,7 @@ using ABI_RC.Core.Util.AssetFiltering;
 using MelonLoader;
 using VRCLightVolumes;
 
-namespace red.sim.LightVolumesUdon
+namespace RedSimLightVolumes
 
 {
     public class Main : MelonMod

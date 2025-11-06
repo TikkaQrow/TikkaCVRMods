@@ -1,10 +1,10 @@
-﻿using red.sim.LightVolumesUdon.Properties;
+﻿using RedSimLightVolumes.Properties;
 using MelonLoader;
 using System.Reflection;
 
 [assembly: MelonInfo(
-    typeof(red.sim.LightVolumesUdon.Main),
-    nameof(red.sim.LightVolumesUdon),
+    typeof(RedSimLightVolumes.Main),
+    nameof(RedSimLightVolumes),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
     downloadLink: ""
@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: MelonAuthorColor(255, 40, 144, 209)] 
 [assembly: HarmonyDontPatchAll]
 
-namespace red.sim.LightVolumesUdon.Properties
+namespace RedSimLightVolumes.Properties
 {
     internal static class AssemblyInfoParams
     {
