@@ -3,7 +3,7 @@
   "name": "RED_SIM's LightVolumes",
   "modversion": "1.0.1",
   "gameversion": "2025r180",
-  "loaderversion": "0.6.6",
+  "loaderversion": "0.7.2",
   "modtype": "Mod",
   "author": "REDSIM, SketchFoxsky, TikkaQrow",
   "description": "Whitelist for REDSIM's VRCLightVolumes, Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VR. Currently supports VRCLV 2.0.0",
