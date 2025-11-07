@@ -1,23 +1,31 @@
-﻿using RedSimLightVolumes.Properties;
-using MelonLoader;
+﻿using MelonLoader;
+using red.sim.LightVolumesUdon.Properties;
+using System.Diagnostics;
 using System.Reflection;
+using System.Security;
+using System.Security.Permissions;
 
 [assembly: MelonInfo(
-    typeof(RedSimLightVolumes.Main),
-    nameof(RedSimLightVolumes),
+    typeof(red.sim.LightVolumesUdon.Main),
+    nameof(red.sim.LightVolumesUdon),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
     downloadLink: ""
 )]
 
 [assembly: MelonGame(null, "ChilloutVR")]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.Default |
+                      DebuggableAttribute.DebuggingModes.DisableOptimizations |
+                      DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints |
+                      DebuggableAttribute.DebuggingModes.EnableEditAndContinue)]
 [assembly: MelonPlatform(MelonPlatformAttribute.CompatiblePlatforms.WINDOWS_X64)]
 [assembly: MelonPlatformDomain(MelonPlatformDomainAttribute.CompatibleDomains.MONO)]
-[assembly: MelonColor(255, 3, 252, 78)]
-[assembly: MelonAuthorColor(255, 40, 144, 209)] 
+[assembly: MelonColor(255, 255, 111, 255)]
+[assembly: MelonAuthorColor(255, 255, 111, 255)]
 [assembly: HarmonyDontPatchAll]
+//[assembly: SecurityPermission((SecurityAction)8, SkipVerification = true)]
 
-namespace RedSimLightVolumes.Properties
+namespace red.sim.LightVolumesUdon.Properties
 {
     internal static class AssemblyInfoParams
     {

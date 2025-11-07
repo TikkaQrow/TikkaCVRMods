@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+	<TargetFramework>.NETStandard,Version=v2.1</TargetFramework>
+	<AssemblyName>red.sim.LightVolumesUdon</AssemblyName>
+	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <BaseOutputPath>U:\PlasticVCS\Tikkas Projects\Mods\LightVolumeMod Tikka\CompiledMods</BaseOutputPath>
+    <Version>$(VersionPrefix)1.0.1</Version>
+    <Description>"Whitelist for REDSIM's VRCLightVolumes, Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VR."</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Currently supports VRCLV 2.0.0</PackageReleaseNotes>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<ImplicitUsings>disable</ImplicitUsings>
+	<RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+    <ItemGroup>
+		<Reference Include="0Harmony">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\0Harmony.dll</HintPath>
+		<Private>False</Private><Private>False</Private></Reference>
+		<Reference Include="AsmResolver">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AsmResolver.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="AsmResolver.DotNet">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AsmResolver.DotNet.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="AsmResolver.PE">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AsmResolver.PE.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="AsmResolver.PE.File">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AsmResolver.PE.File.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Assembly-CSharp">
+		  <HintPath>..\..\..\..\..\PlasticVCS\Tikkas Projects\Mods\LightVolumeMod Tikka\.ManagedLibs\Assembly-CSharp.dll</HintPath>
+		<Private>False</Private><Private>False</Private></Reference>
+		<Reference Include="AssetRipper.Primitives">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AssetRipper.Primitives.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="AssetsTools.NET">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\AssetsTools.NET.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="bHapticsLib">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\bHapticsLib.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="IndexRange">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\IndexRange.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MelonLoader">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MelonLoader.dll</HintPath>
+		<Private>False</Private><Private>False</Private></Reference>
+		<Reference Include="Mono.Cecil">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Mono.Cecil.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Mono.Cecil.Mdb">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Mono.Cecil.Mdb.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Mono.Cecil.Pdb">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Mono.Cecil.Pdb.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Mono.Cecil.Rocks">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Mono.Cecil.Rocks.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MonoMod">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MonoMod.exe</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MonoMod.Backports">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MonoMod.Backports.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MonoMod.ILHelpers">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MonoMod.ILHelpers.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MonoMod.RuntimeDetour">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MonoMod.RuntimeDetour.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="MonoMod.Utils">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\MonoMod.Utils.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Newtonsoft.Json">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Newtonsoft.Json.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="Tomlet">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\Tomlet.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\ChilloutVR_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		<Private>False</Private><Private>False</Private></Reference>
+		<Reference Include="ValueTupleBridge">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\ValueTupleBridge.dll</HintPath>
+		<Private>False</Private></Reference>
+		<Reference Include="WebSocketDotNet">
+		  <HintPath>..\..\..\..\..\SteamLibrary\steamapps\common\ChilloutVR\MelonLoader\net35\WebSocketDotNet.dll</HintPath>
+		<Private>False</Private></Reference>
+	</ItemGroup>
+    <ItemGroup>
+      <None Update="README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+</Project>
