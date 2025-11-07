@@ -5,25 +5,35 @@
 Due to the nature of this mod being just a whitelisting mod the original coponents and scripts are not included in this repo.
 
 ##This project aims to help ChilloutVR players and creators maintain avatars and worlds using RED_SIM's Volumetric Lighting System by directly allowing the Light Volume components to run in game.
+A couple CVR worlds already have Light Volumes (Paste the GUID into search in game to pull the world up!)
 
-#Light Volumes can be setup and impleneted in a ChilloutVR project following the same methods as used for VRC, simply strip out any unknown scripts afterwards prior to upload and this mod should allow it to funtion.
-Requires MelonLoader v0.7.2 or newer. I'll leave a copy of the main Light Volumes readme below
+Moonlit Wanderings - afe31e66-8bc6-4677-b201-f335b236d5f5
+Volumetric Lighting Test - bba352bc-39f5-4134-8d97-e08c2d2d1834
+
+##Light Volumes can be installed and implemeted in a ChilloutVR project using with  Unity Package Manager
+1. On the top bar in Unity click `Window > Package Manager`
+2. Click the `[+]` icon in the top left of the Package Manager window
+3. Select "Add package from git URL..." in the dropdown menu
+4. Paste this link: `https://github.com/REDSIM/VRCLightVolumes.git?path=/Packages/red.sim.lightvolumes`
+5. Press Enter on your keyboard or Click the "Add" button on the right side of the input field, simply strip out any unknown scripts afterwards prior to upload and this mod should allow it to funtion.
+
+I'll leave a copy of the main Light Volumes readme below :3
 
 --------------------------------------------------------------------------------------------------------------------------
 
-**VRC Light Volumes** | [How to Use](./Documentation/HowToUse.md) | [Best Practices](./Documentation/BestPractices.md) | [Udon Sharp API](./Documentation/UdonSharpAPI.md) | [For Shader Developers](./Documentation/ForShaderDevelopers.md) | [Compatible Shaders](./Documentation/CompatibleShaders.md)
+**VRC Light Volumes** | [How to Use](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/HowToUse.md) | [Best Practices](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/BestPractices.md) | [Udon Sharp API](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/UdonSharpAPI.md) | [For Shader Developers](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/ForShaderDevelopers.md) | [Compatible Shaders](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/CompatibleShaders.md)
 
-<p align="center"> <img src="./Documentation/LogoMain.png#gh-dark-mode-only" alt="VRC Light Volumes Main Logo" width="627" /></p>
-<p align="center"> <img src="./Documentation/LogoMainBright.png#gh-light-mode-only" alt="VRC Light Volumes Main Logo" width="627" /></p>
+<p align="center"> <img src="https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/LogoMain.png#gh-dark-mode-only" alt="VRC Light Volumes Main Logo" width="627" /></p>
+<p align="center"> <img src="https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/LogoMainBright.png#gh-light-mode-only" alt="VRC Light Volumes Main Logo" width="627" /></p>
 
 VRC Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VRChat.
 
-**[Installation process described here](#Installation-through-VRChat-Creator-Companion)**
+**[Installation process described here](https://github.com/REDSIM/VRCLightVolumes/blob/main/)**
 
 This is a free open-source asset, so if you like it, I would be very happy if you **[Support me on Patreon](https://www.patreon.com/red_sim/ "Support me on Patreon")**.
 There is a bunch of other cool assets you will get there!
 
-![](./Documentation/Preview_0.png)
+![](https://github.com/REDSIM/VRCLightVolumes/blob/main/Documentation/Preview_0.png)
 
 ## Use Cases
 - Baked partial avatars and dynamic props lighting
@@ -60,8 +70,8 @@ Look for it here: `Packages/VRC Light Volumes/Attribution/`
 
 This will help users know they can use avatars with VRC Light Volumes compatible shaders and also learn more about the system.
 
-<p align="center"> <img src="./Packages/red.sim.lightvolumes/Attribution/LV_Logo_B.png#gh-dark-mode-only" alt="VRC Light Volumes Logo" width="400" /></p>
-<p align="center"> <img src="./Packages/red.sim.lightvolumes/Attribution/LV_Logo_A.png#gh-light-mode-only" alt="VRC Light Volumes Logo" width="400" /></p>
+<p align="center"> <img src="https://github.com/REDSIM/VRCLightVolumes/blob/main/PackagesPackages/red.sim.lightvolumes/Attribution/LV_Logo_B.png#gh-dark-mode-only" alt="VRC Light Volumes Logo" width="400" /></p>
+<p align="center"> <img src="https://github.com/REDSIM/VRCLightVolumes/blob/main/PackagesPackages/red.sim.lightvolumes/Attribution/LV_Logo_A.png#gh-light-mode-only" alt="VRC Light Volumes Logo" width="400" /></p>
 
 Alternatively, you can include a message like this:
 
