@@ -5,14 +5,12 @@
 	<TargetFramework>.NETStandard,Version=v2.1</TargetFramework>
 	<AssemblyName>red.sim.LightVolumesUdon</AssemblyName>
 	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-    <BaseOutputPath>U:\PlasticVCS\Tikkas Projects\Mods\LightVolumeMod Tikka\CompiledMods</BaseOutputPath>
     <Version>$(VersionPrefix)1.0.1</Version>
     <Description>"Whitelist for REDSIM's VRCLightVolumes, Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VR."</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageReleaseNotes>Currently supports VRCLV 2.0.0</PackageReleaseNotes>
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
-	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	<ImplicitUsings>disable</ImplicitUsings>
 	<RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
   </PropertyGroup>

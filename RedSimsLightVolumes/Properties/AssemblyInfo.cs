@@ -23,7 +23,6 @@ using System.Security.Permissions;
 [assembly: MelonColor(255, 255, 111, 255)]
 [assembly: MelonAuthorColor(255, 255, 111, 255)]
 [assembly: HarmonyDontPatchAll]
-//[assembly: SecurityPermission((SecurityAction)8, SkipVerification = true)]
 
 namespace red.sim.LightVolumesUdon.Properties
 {
