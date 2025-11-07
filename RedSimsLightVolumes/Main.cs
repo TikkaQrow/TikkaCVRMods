@@ -31,10 +31,20 @@ namespace red.sim.LightVolumesUdon
                     volumetricFogSet.Add(type);
                 }
                 //Rainbow Logs make the console a happier place <3
-                MelonLogger.Msg(System.ConsoleColor.Red, "LET ");
-                MelonLogger.Msg(System.ConsoleColor.Green, "THERE ");
-                MelonLogger.Msg(System.ConsoleColor.Blue, "BE ");
-                MelonLogger.Msg(System.ConsoleColor.Magenta, "LIGHT!");
+                //MelonLogger.Msg(System.ConsoleColor.Red,     "██╗     ██╗██████╗  ██╗  ██╗████████╗██╗");
+                MelonLogger.Msg(System.ConsoleColor.Yellow, "░█▀▀░█░█░█▀▄░█░░░█░█░░░█▀█░█▀█░█");
+                //MelonLogger.Msg(System.ConsoleColor.Green,   "██║     ██║██║  ███╗███████║   ██║   ██║");
+                MelonLogger.Msg(System.ConsoleColor.Cyan, "░█░░░▀▄▀░█▀▄░█░░░▀▄▀░░░█░█░█░█░▀");
+                //MelonLogger.Msg(System.ConsoleColor.Blue,    "███████╗██║████████║██║  ██║   ██║   ██╗ ");
+                MelonLogger.Msg(System.ConsoleColor.Magenta, "░▀▀▀░░▀░░▀░▀░▀▀▀░░▀░░░░▀▀▀░▀░▀░▀");
+
+                //MelonLogger.Msg(System.ConsoleColor.Red,     "██╗     ██╗██████╗  ██╗  ██╗████████╗██╗");
+                //MelonLogger.Msg(System.ConsoleColor.Yellow,  "██║     ██║██╔═══╝  ██║  ██║   ██╔══╝██║");
+                //MelonLogger.Msg(System.ConsoleColor.Green,   "██║     ██║██║  ███╗███████║   ██║   ██║");
+                //MelonLogger.Msg(System.ConsoleColor.Cyan,    "██║     ██║██║   ██║██╔══██║   ██║   ╚═╝");
+                //MelonLogger.Msg(System.ConsoleColor.Blue,    "███████╗██║████████║██║  ██║   ██║   ██╗ ");
+                //MelonLogger.Msg(System.ConsoleColor.Magenta, "╚══════╝╚═╝╚═══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝");
+                //MelonLogger.Msg(System.ConsoleColor.DarkMagenta, "LET THERE BE LIGHT!");
             }
             else
             {

@@ -2,15 +2,13 @@
 using red.sim.LightVolumesUdon.Properties;
 using System.Diagnostics;
 using System.Reflection;
-using System.Security;
-using System.Security.Permissions;
 
 [assembly: MelonInfo(
     typeof(red.sim.LightVolumesUdon.Main),
     nameof(red.sim.LightVolumesUdon),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
-    downloadLink: ""
+    downloadLink: "https://github.com/TikkaQrow/TikkaCVRMods/releases/download/v1.0.1/red.sim.LightVolumesUdon.dll"
 )]
 
 [assembly: MelonGame(null, "ChilloutVR")]
@@ -29,6 +27,6 @@ namespace red.sim.LightVolumesUdon.Properties
     internal static class AssemblyInfoParams
     {
         public const string Version = "1.0.1";
-        public const string Author = "REDSIM , SketchFoxsky, TikkaQrow";
+        public const string Author = "REDSIM , TikkaQrow";
     }
 }

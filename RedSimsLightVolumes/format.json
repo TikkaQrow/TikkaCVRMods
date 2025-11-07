@@ -1,26 +1,26 @@
 {
-  "_id": -1,
-  "name": "RED_SIM's LightVolumes",
-  "modversion": "1.0.1",
-  "gameversion": "2025r180",
-  "loaderversion": "0.7.2",
-  "modtype": "Mod",
-  "author": "REDSIM, SketchFoxsky, TikkaQrow",
-  "description": "Whitelist for REDSIM's VRCLightVolumes, Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VR. Currently supports VRCLV 2.0.0",
-  "searchtags": [
-    "Volume",
-    "Light",
-    "Volumetric",
-    "Lighting",
-    "REDSIM",
-    "VRC",
-    "VRChat"
-  ],
-  "requirements": [
-    ""
-  ],
-  "downloadlink": "",
-  "sourcelink": "https://github.com/TikkaQrow/TikkaCVRMods/tree/master/RedSimsLightVolumes",
-  "changelog": "Now being maintained by TikkaQrow",
-  "embedcolor": "#ff6fff"
+    "_id": -1,
+    "name": "LightVolumesUdon",
+    "modversion": "1.0.1",
+    "gameversion": "2025r180",
+    "loaderversion": "0.7.2",
+    "modtype": "Mod",
+    "author": "REDSIM, TikkaQrow",
+    "description": "Whitelist for REDSIM's VRCLightVolumes, Light Volumes is an optimized nextgen voxel based light probes replacement and analytic lighting solution for VR. Currently supports VRCLV 2.0.0",
+    "searchtags": [
+        "Volume",
+        "Light",
+        "Volumetric",
+        "Lighting",
+        "REDSIM",
+        "VRC",
+        "VRChat"
+    ],
+    "requirements": [
+        ""
+    ],
+    "downloadlink": "https://github.com/TikkaQrow/TikkaCVRMods/releases/download/v1.0.1/red.sim.LightVolumesUdon.dll",
+    "sourcelink": "https://github.com/TikkaQrow/TikkaCVRMods/tree/master/RedSimsLightVolumes",
+    "changelog": "Now being maintained by TikkaQrow",
+    "embedcolor": "#ff6fff"
 }
