@@ -20,17 +20,20 @@ namespace red.sim.LightVolumesUdon
                 typeof(LightVolumeTVGI)
             };
 
-            //FieldInfo volumetricFogField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.NonPublic | BindingFlags.Static);
-            FieldInfo whitelistField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.Public | BindingFlags.Static);
+            //FieldInfo volumetricFogField = typeof(WorldFilter).GetField("Whiteli", BindingFlags.NonPublic | BindingFlags.Static);
 
             //if (volumetricFogField != null)
-            //HashSet<Type> volumetricFogSet = (HashSet<Type>)volumetricFogField.GetValue(null);
+            //{
+            //    HashSet<Type> volumetricFogSet = (HashSet<Type>)volumetricFogField.GetValue(null);
+
+
+                FieldInfo whitelistField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.Public | BindingFlags.Static);
+
             if (whitelistField != null)
             {
-                // Get the dictionary value
+                // using reflection when i don't need to :3
                 var whitelistDict = (Dictionary<string, HashSet<Type>>)whitelistField.GetValue(null);
 
-                // Try to get the HashSet for the "VolumetricFogAndMist" category
                 if (whitelistDict.TryGetValue("VolumetricFogAndMist", out HashSet<Type> volumetricFogSet))
                 {
                     foreach (Type type in typesToAdd)
