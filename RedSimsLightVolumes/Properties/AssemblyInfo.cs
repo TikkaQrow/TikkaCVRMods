@@ -8,7 +8,7 @@ using System.Reflection;
     nameof(red.sim.LightVolumesUdon),
     AssemblyInfoParams.Version,
     AssemblyInfoParams.Author,
-    downloadLink: "https://github.com/TikkaQrow/TikkaCVRMods/releases/download/v1.0.1/red.sim.LightVolumesUdon.dll"
+    downloadLink: "https://github.com/TikkaQrow/TikkaCVRMods/releases/download/v1.0.2-beta/red.sim.LightVolumesUdon.dll"
 )]
 
 [assembly: MelonGame(null, "ChilloutVR")]
@@ -26,7 +26,7 @@ namespace red.sim.LightVolumesUdon.Properties
 {
     internal static class AssemblyInfoParams
     {
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
         public const string Author = "REDSIM , TikkaQrow";
     }
 }

@@ -1,8 +1,8 @@
 {
-    "_id": -1,
+    "_id": 268,
     "name": "LightVolumesUdon",
-    "modversion": "1.0.1",
-    "gameversion": "2025r180",
+    "modversion": "1.0.2",
+    "gameversion": "2026r181",
     "loaderversion": "0.7.2",
     "modtype": "Mod",
     "author": "REDSIM, TikkaQrow",
@@ -21,6 +21,6 @@
     ],
     "downloadlink": "https://github.com/TikkaQrow/TikkaCVRMods/releases/download/v1.0.1/red.sim.LightVolumesUdon.dll",
     "sourcelink": "https://github.com/TikkaQrow/TikkaCVRMods/tree/master/RedSimsLightVolumes",
-    "changelog": "Now being maintained by TikkaQrow",
+    "changelog": "Added support for Nightly 2026r181",
     "embedcolor": "#ff6fff"
 }

@@ -20,35 +20,40 @@ namespace red.sim.LightVolumesUdon
                 typeof(LightVolumeTVGI)
             };
 
-            FieldInfo volumetricFogField = typeof(WorldFilter).GetField("_VolumetricFogAndMist", BindingFlags.NonPublic | BindingFlags.Static);
+            //FieldInfo volumetricFogField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.NonPublic | BindingFlags.Static);
+            FieldInfo whitelistField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.Public | BindingFlags.Static);
 
-            if (volumetricFogField != null)
+            //if (volumetricFogField != null)
+            //HashSet<Type> volumetricFogSet = (HashSet<Type>)volumetricFogField.GetValue(null);
+            if (whitelistField != null)
             {
-                HashSet<Type> volumetricFogSet = (HashSet<Type>)volumetricFogField.GetValue(null);
+                // Get the dictionary value
+                var whitelistDict = (Dictionary<string, HashSet<Type>>)whitelistField.GetValue(null);
 
-                foreach (Type type in typesToAdd)
+                // Try to get the HashSet for the "VolumetricFogAndMist" category
+                if (whitelistDict.TryGetValue("VolumetricFogAndMist", out HashSet<Type> volumetricFogSet))
                 {
-                    volumetricFogSet.Add(type);
-                }
-                //Rainbow Logs make the console a happier place <3
-                //MelonLogger.Msg(System.ConsoleColor.Red,     "██╗     ██╗██████╗  ██╗  ██╗████████╗██╗");
-                MelonLogger.Msg(System.ConsoleColor.Yellow, "░█▀▀░█░█░█▀▄░█░░░█░█░░░█▀█░█▀█░█");
-                //MelonLogger.Msg(System.ConsoleColor.Green,   "██║     ██║██║  ███╗███████║   ██║   ██║");
-                MelonLogger.Msg(System.ConsoleColor.Cyan, "░█░░░▀▄▀░█▀▄░█░░░▀▄▀░░░█░█░█░█░▀");
-                //MelonLogger.Msg(System.ConsoleColor.Blue,    "███████╗██║████████║██║  ██║   ██║   ██╗ ");
-                MelonLogger.Msg(System.ConsoleColor.Magenta, "░▀▀▀░░▀░░▀░▀░▀▀▀░░▀░░░░▀▀▀░▀░▀░▀");
+                    foreach (Type type in typesToAdd)
+                    {
+                        volumetricFogSet.Add(type);
+                    }
+                    //Rainbow Logs make the console a happier place <3
+                    MelonLogger.Msg(System.ConsoleColor.Yellow, "░█▀▀░█░█░█▀▄░█░░░█░█░░░█▀█░█▀█░█");
+                    MelonLogger.Msg(System.ConsoleColor.Cyan, "░█░░░▀▄▀░█▀▄░█░░░▀▄▀░░░█░█░█░█░▀");
+                    MelonLogger.Msg(System.ConsoleColor.Magenta, "░▀▀▀░░▀░░▀░▀░▀▀▀░░▀░░░░▀▀▀░▀░▀░▀");
 
-                //MelonLogger.Msg(System.ConsoleColor.Red,     "██╗     ██╗██████╗  ██╗  ██╗████████╗██╗");
-                //MelonLogger.Msg(System.ConsoleColor.Yellow,  "██║     ██║██╔═══╝  ██║  ██║   ██╔══╝██║");
-                //MelonLogger.Msg(System.ConsoleColor.Green,   "██║     ██║██║  ███╗███████║   ██║   ██║");
-                //MelonLogger.Msg(System.ConsoleColor.Cyan,    "██║     ██║██║   ██║██╔══██║   ██║   ╚═╝");
-                //MelonLogger.Msg(System.ConsoleColor.Blue,    "███████╗██║████████║██║  ██║   ██║   ██╗ ");
-                //MelonLogger.Msg(System.ConsoleColor.Magenta, "╚══════╝╚═╝╚═══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝");
-                //MelonLogger.Msg(System.ConsoleColor.DarkMagenta, "LET THERE BE LIGHT!");
-            }
-            else
-            {
-                MelonLogger.Error("It's broken. Guess you'll have sit in the dark. Buried in FogAndMist");
+                    //MelonLogger.Msg(System.ConsoleColor.Red,     "██╗     ██╗██████╗  ██╗  ██╗████████╗██╗");
+                    //MelonLogger.Msg(System.ConsoleColor.Yellow,  "██║     ██║██╔═══╝  ██║  ██║   ██╔══╝██║");
+                    //MelonLogger.Msg(System.ConsoleColor.Green,   "██║     ██║██║  ███╗███████║   ██║   ██║");
+                    //MelonLogger.Msg(System.ConsoleColor.Cyan,    "██║     ██║██║   ██║██╔══██║   ██║   ╚═╝");
+                    //MelonLogger.Msg(System.ConsoleColor.Blue,    "███████╗██║████████║██║  ██║   ██║   ██╗ ");
+                    //MelonLogger.Msg(System.ConsoleColor.Magenta, "╚══════╝╚═╝╚═══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝");
+                    //MelonLogger.Msg(System.ConsoleColor.DarkMagenta, "LET THERE BE LIGHT!");
+                }
+                else
+                {
+                    MelonLogger.Error("It's broken. Guess you'll have sit in the dark. Buried in FogAndMist");
+                }
             }
         }
     }
