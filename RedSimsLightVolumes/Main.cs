@@ -27,15 +27,16 @@ namespace red.sim.LightVolumesUdon
             //    HashSet<Type> volumetricFogSet = (HashSet<Type>)volumetricFogField.GetValue(null);
 
 
-                FieldInfo whitelistField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.Public | BindingFlags.Static);
+            //    FieldInfo whitelistField = typeof(WorldFilter).GetField("Whitelist", BindingFlags.Public | BindingFlags.Static);
 
-            if (whitelistField != null)
+            //if (whitelistField != null)
+            //{
+            //    // using reflection when i don't need to :3
+            //    var whitelistDict = (Dictionary<string, HashSet<Type>>)whitelistField.GetValue(null);
+
+            //    if (whitelistDict.TryGetValue("VolumetricFogAndMist", out HashSet<Type> volumetricFogSet))
+            if (WorldFilter.Whitelist.TryGetValue("VolumetricFogAndMist", out var volumetricFogSet))
             {
-                // using reflection when i don't need to :3
-                var whitelistDict = (Dictionary<string, HashSet<Type>>)whitelistField.GetValue(null);
-
-                if (whitelistDict.TryGetValue("VolumetricFogAndMist", out HashSet<Type> volumetricFogSet))
-                {
                     foreach (Type type in typesToAdd)
                     {
                         volumetricFogSet.Add(type);
@@ -60,4 +61,4 @@ namespace red.sim.LightVolumesUdon
             }
         }
     }
-}
+//}
